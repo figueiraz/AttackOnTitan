@@ -1,0 +1,334 @@
+@font-face {
+    font-family: DOWNCOME;
+    src: url(DOWNCOME.TTF);
+}
+
+html,
+body {
+    overflow-x: hidden
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #010201;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #010201;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(98, 232, 16);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #63e810c4;
+}
+
+.imagem-txt {
+    position: relative;
+    text-align: center;
+}
+
+.img1 {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.imagem-txt h1 {
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.995);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-family: DOWNCOME;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.container h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.tabela {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.escolha {
+    caret-color: transparent;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #FBAB7E;
+    background: rgb(55, 113, 32);
+    background: linear-gradient(93deg, rgba(55, 113, 32, 1) 0%, rgba(128, 235, 40, 1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 9px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 200px;
+    height: 26px;
+    margin: auto;
+    text-align: center;
+}
+
+.escolha:hover {
+    transform: scale(1.06);
+}
+
+input::placeholder {
+    color: #00000069;
+}
+
+.button {
+    background: rgb(55, 113, 32);
+    background: linear-gradient(93deg, rgba(55, 113, 32, 1) 0%, rgba(128, 235, 40, 1) 100%);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+    transform: scale(0.5);
+}
+
+.button:hover .fa-arrow-down {
+    animation: down 1.5s none ease-in-out infinite;
+}
+
+.fa-arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 70px;
+}
+
+@keyframes down {
+    25% {
+        top: 40%;
+    }
+
+    50% {
+        top: 55%;
+    }
+
+    75% {
+        top: 45%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+.buscarbtn {
+    background: rgb(55, 113, 32);
+    background: linear-gradient(93deg, rgba(55, 113, 32, 1) 0%, rgba(128, 235, 40, 1) 100%);
+    cursor: pointer;
+    --color: #010102;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 140px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin: auto;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.buscarbtn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.buscarbtn:hover {
+    color: #fff;
+}
+
+.buscarbtn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.buscarbtn:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.buscarbtn:active:before {
+    background: #464646;
+    transition: background 0s;
+}
+
+.textoeimagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+}
+
+.frase {
+    margin-top: 10px;
+    text-align: justify;
+    color: aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.fundador {
+    margin-top: 10px;
+    border-radius: 50px 5px 50px 5px;
+    max-width: 500px;
+    box-shadow: 0px 0px 50px rgb(114, 156, 0);
+}
+
+.imgfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.aot {
+    max-width: 200px;
+}
+
+footer {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background: #2e2e2e;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.txtgreen {
+    color: #62e810;
+}
+
+.todes {
+    color: #000000;
+    background-color: #62e810;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.todes p {
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .imagem-txt h1 {
+      font-size: 2rem;
+    }
+
+    .fundador {
+        max-width: 300px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .frase {
+        font-size: 14px;
+    }
+
+    .textoeimagem {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imagem-txt h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .escolha::-webkit-calendar-picker-indicator {
+    color: #0a0a0a;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  .escolha::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  .escolha::-webkit-search-cancel-button {
+    display: none;
+  }
+  
+  .escolha::-webkit-clear-button {
+    display: none;
+  }
+  
+  .escolha::-webkit-datetime-edit-fields-wrapper {
+    pointer-events: none;
+  }
+  
+  .escolha::-webkit-datetime-edit-ampm-field,
+  .escolha::-webkit-datetime-edit-day-field,
+  .escolha::-webkit-datetime-edit-fields-wrapper,
+  .escolha::-webkit-datetime-edit-hour-field,
+  .escolha::-webkit-datetime-edit-minute-field,
+  .escolha::-webkit-datetime-edit-month-field,
+  .escolha::-webkit-datetime-edit-second-field,
+  .escolha::-webkit-datetime-edit-year-field {
+    pointer-events: none;
+  }
+  
+  .escolha::-webkit-datetime-edit-text {
+    color: transparent;
+  }
+  
+  .escolha::-webkit-datetime-edit-month-field:hover,
+  .escolha::-webkit-datetime-edit-year-field:hover {
+    cursor: pointer;
+  }
+  
+  .escolha::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="imagem-txt">
+        <img class="img1" src="teste4.png" alt="">
+        <h1>Conheça os Nove Titãs Originais</h1>
+    </div>
+    <div class="container">
+        <h1>Escolha seu Titã</h1>
+        <div class="tabela">
+            <input class="escolha" placeholder="" type="text" list="escolhaTitas" id="titas">
+            <datalist id="escolhaTitas">
+                <option class="opt" value="Titã Fundador">
+                <option value="Titã de Ataque">
+                <option value="Titã Colossal">
+                <option value="Titã Fêmea">
+                <option value="Titã Blindado">
+                <option value="Titã Bestial">
+                <option value="Titã Mandíbula">
+                <option value="Titã Carroça">
+                <option value="Titã Martelo de Guerra">
+            </datalist>
+            <div class="button" onclick="escolhaTita()"><i class="fas fa-arrow-down"></i></div>
+            <div class="textoeimagem">
+                <div class="frase" id="frase"></div>
+                <div class="imagem" id="imagem"></div>
+                <div id="btn"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="imgfooter">
+        <img class="aot" src="Attack-On-Titan-Word-Logo-Transparent-PNG.png" alt="">
+        <footer>
+            <p>Desenvolvido por <span class="txtgreen">Gabriel Figueira <i class="fa-solid fa-glasses"></i></span></p>
+            <div class="todes">
+                <p>&copy; Todos os direitos Reservados</p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
