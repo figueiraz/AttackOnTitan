@@ -55,6 +55,11 @@ body {
     font-size: 3rem;
 }
 
+.numero {
+   color: #62e810;
+  }
+  
+
 .container h1 {
     margin-top: 50px;
     text-align: center;
@@ -202,7 +207,7 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
     margin: auto;
 }
 
@@ -210,8 +215,9 @@ input::placeholder {
     margin-top: 10px;
     text-align: justify;
     color: aliceblue;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -262,73 +268,98 @@ footer {
 
 @media (max-width: 768px) {
     .imagem-txt h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
 
     .fundador {
-        max-width: 300px;
+        max-width: 250px;
         text-align: center;
         margin: auto;
     }
 
     .frase {
         font-size: 14px;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     .textoeimagem {
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .imagem-txt h1 {
-      font-size: 1.5rem;
-    }
-  }
 
-  .escolha::-webkit-calendar-picker-indicator {
+    .button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fa-arrow-down {
+        font-size: 50px;
+    }
+
+    .buscarbtn {
+        width: 108px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .escolha {
+        width: 157px;
+        height: 20px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagem-txt h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.escolha::-webkit-calendar-picker-indicator {
     color: #0a0a0a;
     font-size: 20px;
     transition: 0.4s;
-  }
-  
-  .escolha::-webkit-inner-spin-button {
+}
+
+.escolha::-webkit-inner-spin-button {
     display: none;
-  }
-  
-  .escolha::-webkit-search-cancel-button {
+}
+
+.escolha::-webkit-search-cancel-button {
     display: none;
-  }
-  
-  .escolha::-webkit-clear-button {
+}
+
+.escolha::-webkit-clear-button {
     display: none;
-  }
-  
-  .escolha::-webkit-datetime-edit-fields-wrapper {
+}
+
+.escolha::-webkit-datetime-edit-fields-wrapper {
     pointer-events: none;
-  }
-  
-  .escolha::-webkit-datetime-edit-ampm-field,
-  .escolha::-webkit-datetime-edit-day-field,
-  .escolha::-webkit-datetime-edit-fields-wrapper,
-  .escolha::-webkit-datetime-edit-hour-field,
-  .escolha::-webkit-datetime-edit-minute-field,
-  .escolha::-webkit-datetime-edit-month-field,
-  .escolha::-webkit-datetime-edit-second-field,
-  .escolha::-webkit-datetime-edit-year-field {
+}
+
+.escolha::-webkit-datetime-edit-ampm-field,
+.escolha::-webkit-datetime-edit-day-field,
+.escolha::-webkit-datetime-edit-fields-wrapper,
+.escolha::-webkit-datetime-edit-hour-field,
+.escolha::-webkit-datetime-edit-minute-field,
+.escolha::-webkit-datetime-edit-month-field,
+.escolha::-webkit-datetime-edit-second-field,
+.escolha::-webkit-datetime-edit-year-field {
     pointer-events: none;
-  }
-  
-  .escolha::-webkit-datetime-edit-text {
+}
+
+.escolha::-webkit-datetime-edit-text {
     color: transparent;
-  }
-  
-  .escolha::-webkit-datetime-edit-month-field:hover,
-  .escolha::-webkit-datetime-edit-year-field:hover {
+}
+
+.escolha::-webkit-datetime-edit-month-field:hover,
+.escolha::-webkit-datetime-edit-year-field:hover {
     cursor: pointer;
-  }
-  
-  .escolha::-webkit-calendar-picker-indicator:hover {
+}
+
+.escolha::-webkit-calendar-picker-indicator:hover {
     cursor: pointer;
-  }
+}
