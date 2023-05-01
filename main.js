@@ -100,3 +100,15 @@ function limparTela() {
     document.getElementById("imagem").innerHTML = "";
     document.getElementById("btn").innerHTML = "";
 }
+
+var input = document.getElementById("titas");
+
+input.addEventListener("focus", function() {
+  input.placeholder = "";
+});
+
+input.addEventListener("blur", function() {
+  if (input.value == "") {
+    input.placeholder = "Clique aqui";
+  }
+});
